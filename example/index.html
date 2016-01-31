@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jsunw_autocomplete</title>
+    <link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <style>
+        .jsunw-autocomplete-tags {
+            cursor: text;
+            overflow: hidden;
+        }
+        .jsunw-autocomplete-tags.focus {
+            border-color: rgba(82, 168, 236, 0.8);
+            box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+            outline: 0 none;
+        }
+        .jsunw-autocomplete-tags.error {
+             border-color: #a94442;
+             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        }
+        .jsunw-autocomplete-tags .jsunw-autocomplete-tag {
+            margin-right: 2px;
+        }
+        .jsunw-autocomplete-tags [data-role=remove]::after {
+            padding-left: 5px;
+            cursor: pointer;
+        }
+        .jsunw-autocomplete-tags [data-role=remove]::after {
+            content: "×";
+        }
+        .jsunw-autocomplete-tags > input {
+            width: 20px;
+            height: 20px;
+            /*border: 0px;*/
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <input class="form-control" data-role="jsunw_autocomplete">
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../src/jsunw_autocomplete.js"></script>
+<script>
+
+</script>
+</body>
+</html>
